@@ -1,0 +1,16 @@
+$ cat -n 1.c
+     1  #include <stdio.h>
+     2  #include <stdlib.h>
+     3
+     4  void test()
+     5  {
+     6      printf("cur func : %s ; cur line : %d\n", __FUNCTION__, __LINE__);
+     7      return;
+     8  }
+     9
+    10  void main()
+    11  {
+    12      printf("cur file : %s ; cur func : %s ; cur line : %d\n", __FILE__, __FUNCTION__, __LINE__);
+    13      test();
+    14      return;
+    15  }
